@@ -1,0 +1,28 @@
+/* Mobile */
+@media (max-width: 739px) {
+    .header-nav {
+        margin: 6px;
+    }
+    .header-list {
+        display: none;
+    }
+    .header-menu-bar {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .header-item__link {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    .header-search {
+        width: 250px;
+    }
+}

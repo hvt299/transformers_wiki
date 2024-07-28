@@ -1,0 +1,115 @@
+/* Header */
+.header {
+    background-image: linear-gradient(to bottom , white, rgb(117, 114, 114));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.header-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo__link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.header-logo__img {
+    width: 42px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header-logo__img:hover {
+    cursor: pointer;
+    filter: opacity(0.7);
+}
+
+.header-list {
+    display: flex;
+    margin-left: 10px;
+}
+
+.header-item {
+    padding-left: 0;
+    list-style: none;
+    font-family: fantasy;
+}
+
+.header-item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.header-item__link:hover {
+    color: #0056b3;
+}
+
+.header-search {
+    width: 300px;
+    height: 22px;
+    display: flex;
+}
+
+.header-search__input {
+    flex: 1;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding-left: 4px;
+}
+
+.header-search__btn {
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 2px;
+    width: 40px;
+    display: block;
+}
+
+.header-search__btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.header-search__btn i {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.header-menu-bar {
+    display: none;
+}
+
+.header-menu-bar__btn {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 22px;
+    display: block;
+}
+
+.header-menu-bar__btn i {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
