@@ -52,11 +52,42 @@
     text-decoration: none;
     color: var(--text-color);
     padding: 10px;
+    margin: 0 5px;
     font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .header-item__link:hover {
     color: #0056b3;
+}
+
+.header-item-wrap {
+    position: relative;
+}
+
+.header-item__arrow {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-20%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--black-color) transparent transparent transparent;
+}
+
+.header-item__noticed {
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    transform: scale(0.7);
+    font-family: "Roboto", sans-serif;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: var(--white-color);
 }
 
 .header-search {
@@ -71,8 +102,8 @@
     color: var(--text-color);
     outline: none;
     border: 1px solid var(--border-color);
-    border-radius: 2px;
-    padding-left: 4px;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 .header-search__btn {
@@ -80,7 +111,7 @@
     background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
     outline: none;
-    border-radius: 2px;
+    border-radius: 10px;
     width: 40px;
     display: block;
 }
@@ -112,4 +143,27 @@
 .header-menu-bar__btn i {
     color: var(--text-color);
     font-size: 1.2rem;
+}
+
+/* App container */
+.main_container {
+    background-image: linear-gradient(to bottom , white, rgb(117, 114, 114));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-color);
+    margin: 0 16px;
+}
+
+.banner__img {
+    width: 950px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

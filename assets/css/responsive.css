@@ -9,11 +9,22 @@
     .header-menu-bar {
         display: block;
     }
+    .banner__img {
+        width: 280px;
+    }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .header-item__arrow {
+        right: -1px;
+    }
+    .header-item__noticed {
+        right: -8px;
+    }
+    .banner__img {
+        width: 500px;
+    }
 }
 
 /* Mobile & Tablet */
@@ -21,6 +32,7 @@
     .header-item__link {
         font-size: 1.3rem;
         padding: 8px;
+        margin: 0;
     }
     .header-search {
         width: 250px;
