@@ -16,8 +16,11 @@
         font-size: 1.8rem;
         letter-spacing: 4px;
     }
-    .news {
+    .news, .about {
         margin: 40px 20px;
+    }
+    .news-card, .news-card__img {
+        height: auto;
     }
 }
 
@@ -36,6 +39,12 @@
         font-size: 2rem;
         letter-spacing: 6px;
     }
+    .about__picture {
+        display: flex;
+    }
+    .about__img {
+        width: 50%;
+    }
 }
 
 /* Mobile & Tablet */
@@ -47,8 +56,5 @@
     }
     .header-search {
         width: 250px;
-    }
-    .news-card {
-        margin-bottom: 20px;
     }
 }
