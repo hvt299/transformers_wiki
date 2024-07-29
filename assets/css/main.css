@@ -368,3 +368,42 @@
     color: var(--text-color);
     text-transform: uppercase;
 }
+
+/* Footer */
+.footer {
+    background-color: rgba(204, 204, 204, 0.3);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.footer-contact__heading {
+    font-size: 1.6rem;
+}
+
+.footer-contact__socials {
+    margin-top: 20px;
+}
+
+.footer-contact__socials-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    padding: 0 8px;
+}
+
+.footer-contact__socials-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-contact__copyright {
+    margin-top: 20px;
+    font-size: 1.4rem;
+
+}

@@ -16,10 +16,11 @@
         font-size: 1.8rem;
         letter-spacing: 4px;
     }
-    .news, .about {
+    .news, .about, .character {
         margin: 40px 20px;
     }
-    .news-card, .news-card__img {
+    .news-card, .news-card__img,
+    .character-content, .character-content__img {
         height: auto;
     }
 }
