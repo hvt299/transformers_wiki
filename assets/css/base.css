@@ -67,7 +67,8 @@ html {
 .picture-overlay-content {
     position: fixed; 
     width: 100%;
-    top: 100px;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
     display: none;
     overflow: hidden;
