@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1;
     background-image: linear-gradient(to bottom , white, rgb(117, 114, 114));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -201,6 +201,7 @@ span.header-item__link:hover .header-item__list {
 
 .banner__img {
     width: 950px;
+    cursor: pointer;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -343,11 +344,16 @@ span.header-item__link:hover .header-item__list {
 }
 
 .about__img {
+    cursor: pointer;
     width: 100%;
     padding: 10px 4px;
     background-color: rgba(204, 204, 204, 0.3);
     border-radius: 10px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about__img:hover {
+    filter: brightness(70%);
 }
 
 /* Character */

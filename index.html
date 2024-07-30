@@ -290,12 +290,33 @@
             </div>
         </footer>
     </div>
-    <!-- <div class="modal">
-        <div class="modal__overlay"></div>
-
-        <div class="modal__body">
-
+    <!-- Overlay -->
+    <div class="overlay">
+        <div class="overlay-content">
+            <img id="imgBig" src="" alt="">
         </div>
-    </div> -->
+    </div>
 </body>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Overlay -->
+    <script>
+        $(".banner img, .about__picture img").click(function(){
+            $("#imgBig").attr("src",$(this).prop('src'));
+            $(".overlay").show(30, "linear");
+            $(".overlay-content").show(30, "linear");
+        });
+
+        $("#imgBig").click(function(){
+            $("#imgBig").attr("src", "");
+            $(".overlay").hide();
+            $(".overlay-content").hide();
+        });
+
+        $(".overlay").click(function(){
+            $("#imgBig").attr("src", "");
+            $(".overlay").hide();
+            $(".overlay-content").hide();
+        });
+    </script>
 </html>
