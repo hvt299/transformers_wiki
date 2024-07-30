@@ -1,5 +1,10 @@
 /* Header */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     background-image: linear-gradient(to bottom , white, rgb(117, 114, 114));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -184,14 +189,14 @@ span.header-item__link:hover .header-item__list {
     font-size: 1.2rem;
 }
 
-/* App container */
+/* Main container */
 
 /* Banner */
 .banner {
     display: flex;
     justify-content: center;
     background-color: var(--black-color);
-    margin: 0 16px;
+    margin: 64px 16px;
 }
 
 .banner__img {
@@ -209,12 +214,14 @@ span.header-item__link:hover .header-item__list {
 }
 
 .title__heading {
+    --letter-spacing: 8px;    
     color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: 600;
-    letter-spacing: 8px;
+    letter-spacing: var(--letter-spacing);
     font-weight: 600;
     text-transform: uppercase;
+    animation: letterSpacing ease-out 3s;
 }
 
 /* News */
