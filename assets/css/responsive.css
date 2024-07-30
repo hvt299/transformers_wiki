@@ -3,14 +3,9 @@
     .header-nav {
         margin: 6px;
     }
-    .header-list {
-        display: none;
-    }
-    .header-menu-bar {
-        display: block;
-    }
     .banner__img {
-        width: 280px;
+        /* width: 280px; */
+        display: none;
     }
     .title__heading {
         font-size: 1.8rem;
@@ -50,6 +45,12 @@
 
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
+    .header-list {
+        display: none;
+    }
+    .header-menu-bar {
+        display: block;
+    }
     .header-item__link {
         font-size: 1.3rem;
         padding: 8px;
