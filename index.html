@@ -75,6 +75,33 @@
                         <button class="header-menu-bar__btn">
                             <i class="fa-solid fa-bars"></i>
                         </button>
+
+                        <!-- Overlay -->
+                        <div class="overlay"></div>
+
+                        <!-- Nav mobile -->
+                        <nav class="nav-mobile">
+                            <button class="nav-mobile__btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <ul class="nav-mobile__list">
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__item-link">Home</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__item-link">Category</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__item-link">Shopping</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__item-link">Community</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__item-link">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </nav>
             </div>
@@ -290,9 +317,9 @@
             </div>
         </footer>
     </div>
-    <!-- Overlay -->
-    <div class="overlay">
-        <div class="overlay-content">
+    <!-- Picture overlay -->
+    <div class="picture-overlay">
+        <div class="picture-overlay-content">
             <img id="imgBig" src="" alt="">
         </div>
     </div>
@@ -301,22 +328,39 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Overlay -->
     <script>
+        $(".header-menu-bar button").click(function(){
+            $(".overlay").show();
+            $(".nav-mobile").addClass("nav-mobile--show");
+        })
+
+        $(".nav-mobile button").click(function(){
+            $(".overlay").hide();
+            $(".nav-mobile").removeClass("nav-mobile--show");
+        })
+
+        $(".overlay").click(function(){
+            $(".overlay").hide();
+            $(".nav-mobile").removeClass("nav-mobile--show");
+        })
+    </script>
+    <!-- Picture overlay -->
+    <script>
         $(".banner img, .about__picture img").click(function(){
             $("#imgBig").attr("src",$(this).prop('src'));
-            $(".overlay").show(30, "linear");
-            $(".overlay-content").show(30, "linear");
+            $(".picture-overlay").show(30, "linear");
+            $(".picture-overlay-content").show(30, "linear");
         });
 
         $("#imgBig").click(function(){
             $("#imgBig").attr("src", "");
-            $(".overlay").hide();
-            $(".overlay-content").hide();
+            $(".picture-overlay").hide();
+            $(".picture-overlay-content").hide();
         });
 
-        $(".overlay").click(function(){
+        $(".picture-overlay").click(function(){
             $("#imgBig").attr("src", "");
-            $(".overlay").hide();
-            $(".overlay-content").hide();
+            $(".picture-overlay").hide();
+            $(".picture-overlay-content").hide();
         });
     </script>
 </html>

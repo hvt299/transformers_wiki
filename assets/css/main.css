@@ -186,7 +186,61 @@ span.header-item__link:hover .header-item__list {
 
 .header-menu-bar__btn i {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+}
+
+/* Nav mobile */
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav-mobile--show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav-mobile__btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav-mobile__btn i {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav-mobile__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
+}
+
+.nav-mobile__item-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-mobile__item-link:hover {
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
 /* Main container */
