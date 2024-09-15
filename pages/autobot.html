@@ -136,7 +136,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="../pages/characters/bumblebee.html" class="character-content__link">
                                         <img src="../assets/img/bumblebee.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">Bumblebee</h4>
@@ -146,7 +146,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="../pages/characters/crosshair.html" class="character-content__link">
                                         <img src="../assets/img/crosshair.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">CrossHair</h4>
@@ -156,7 +156,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="../pages/characters/hound.html" class="character-content__link">
                                         <img src="../assets/img/hound.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">Hound</h4>
@@ -195,24 +195,14 @@
             </div>
         </footer>
     </div>
+    <!-- Picture overlay -->
+    <div class="picture-overlay">
+        <div class="picture-overlay-content">
+            <img id="imgBig" src="" alt="">
+        </div>
+    </div>
 </body>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Overlay -->
-    <script>
-        $(".header-menu-bar button").click(function(){
-            $(".overlay").show();
-            $(".nav-mobile").addClass("nav-mobile--show");
-        })
-
-        $(".nav-mobile button").click(function(){
-            $(".overlay").hide();
-            $(".nav-mobile").removeClass("nav-mobile--show");
-        })
-
-        $(".overlay").click(function(){
-            $(".overlay").hide();
-            $(".nav-mobile").removeClass("nav-mobile--show");
-        })
-    </script>
+    <script src="../assets/js/style.js"></script>
 </html>

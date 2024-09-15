@@ -223,7 +223,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/megatron.html" class="character-content__link">
                                         <img src="./assets/img/megatron.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">Megatron</h4>
@@ -233,7 +233,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/bumblebee.html" class="character-content__link">
                                         <img src="./assets/img/bumblebee.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">Bumblebee</h4>
@@ -243,7 +243,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/ironhide.html" class="character-content__link">
                                         <img src="./assets/img/ironhide.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">IronHide</h4>
@@ -253,7 +253,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/crosshair.html" class="character-content__link">
                                         <img src="./assets/img/crosshair.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">CrossHair</h4>
@@ -263,8 +263,8 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
-                                        <img src="./assets/img/sockwave.jpg" alt="" class="character-content__img">
+                                    <a href="./pages/characters/shockwave.html" class="character-content__link">
+                                        <img src="./assets/img/shockwave.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">ShockWave</h4>
                                         </div>
@@ -273,7 +273,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/starscream.html" class="character-content__link">
                                         <img src="./assets/img/starscream.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">StarScream</h4>
@@ -283,7 +283,7 @@
                             </div>
                             <div class="col l-2-4 m-4 c-12">
                                 <div class="character-content">
-                                    <a href="" class="character-content__link">
+                                    <a href="./pages/characters/hound.html" class="character-content__link">
                                         <img src="./assets/img/hound.jpg" alt="" class="character-content__img">
                                         <div class="character-content__body">
                                             <h4 class="character-content__name">Hound</h4>
@@ -331,41 +331,5 @@
 </body>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Overlay -->
-    <script>
-        $(".header-menu-bar button").click(function(){
-            $(".overlay").show();
-            $(".nav-mobile").addClass("nav-mobile--show");
-        })
-
-        $(".nav-mobile button").click(function(){
-            $(".overlay").hide();
-            $(".nav-mobile").removeClass("nav-mobile--show");
-        })
-
-        $(".overlay").click(function(){
-            $(".overlay").hide();
-            $(".nav-mobile").removeClass("nav-mobile--show");
-        })
-    </script>
-    <!-- Picture overlay -->
-    <script>
-        $(".banner img, .about__picture img").click(function(){
-            $("#imgBig").attr("src",$(this).prop('src'));
-            $(".picture-overlay").show(30, "linear");
-            $(".picture-overlay-content").show(30, "linear");
-        });
-
-        $("#imgBig").click(function(){
-            $("#imgBig").attr("src", "");
-            $(".picture-overlay").hide();
-            $(".picture-overlay-content").hide();
-        });
-
-        $(".picture-overlay").click(function(){
-            $("#imgBig").attr("src", "");
-            $(".picture-overlay").hide();
-            $(".picture-overlay-content").hide();
-        });
-    </script>
+    <script src="./assets/js/style.js"></script>
 </html>
