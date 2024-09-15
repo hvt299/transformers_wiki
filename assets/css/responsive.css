@@ -3,9 +3,12 @@
     .header-nav {
         margin: 6px;
     }
-    .banner__img {
+    .banner {
         /* width: 280px; */
         display: none;
+    }
+    .title {
+        margin-top: 100px;
     }
     .title__heading {
         --letter-spacing: 4px;
